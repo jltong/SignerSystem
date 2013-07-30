@@ -1,0 +1,14 @@
+IncTrainInitialize
+IncTrainInitializeWithHandlers
+IncTrainTerminate
+IncTrainPrintStackTrace
+IncTrainGetMcrID
+mlxIncrementGMM
+mlxReadspeech
+mlxEnframe
+mlxSgn
+mlxGetmfcc
+mlxProbabilitys
+mlxCluster_Probability
+mlxCluster_Covariance
+mlxExchange

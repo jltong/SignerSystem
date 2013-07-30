@@ -1,0 +1,29 @@
+1.[Microsoft][ODBC 驱动程序管理器] 未发现数据源名称并且未指定默认驱动程序
+A: 数据源名称dsn指定不正确，或者指定的dsn不存在。
+2. Error Lnk2019: odbccp32.lib(dllload)
+A: 将Debug改为Release版
+
+
+Bug 记录：
+
+1. 训练， 报告非法路径问题；
+2. 签到， 存在无当前用户信息；
+
+0528计划：
+1. 去掉NameTable，直接用Access数据库中的userinfo表替代。
+2. 支持选择wav文件进行“测试”
+3. 发布安装包；
+
+技术细节:
+CStdioFile myfile;
+myfile.Open() 打开或新建文件
+myfile.Remove() 移除文件
+
+管理员面板：
+#训练和测试时，提供打开文件选项！ Leave behind!
+#注意：speechdata.mat与train表，数据库一致性  OK
+#老用户声音存储有问题！！ OK
+
+0612:
+初始化matlab dll失败！！！
+matlab runtime labrary崩溃。

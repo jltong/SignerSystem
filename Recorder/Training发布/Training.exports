@@ -1,0 +1,14 @@
+TrainingInitialize
+TrainingInitializeWithHandlers
+TrainingTerminate
+TrainingPrintStackTrace
+TrainingGetMcrID
+mlxTraining
+mlxReadspeech
+mlxEnframe
+mlxSgn
+mlxGetmfcc
+mlxProbabilitys
+mlxGmmTraining
+mlxCluster_Probability
+mlxCluster_Covariance

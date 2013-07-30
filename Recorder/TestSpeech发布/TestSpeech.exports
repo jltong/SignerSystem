@@ -1,0 +1,11 @@
+TestSpeechInitialize
+TestSpeechInitializeWithHandlers
+TestSpeechTerminate
+TestSpeechPrintStackTrace
+TestSpeechGetMcrID
+mlxTestSpeech
+mlxGetmfcc
+mlxReadspeech
+mlxProbabilitys
+mlxSgn
+mlxEnframe

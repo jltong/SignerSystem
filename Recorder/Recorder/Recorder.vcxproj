@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81B2B6EE-769E-4D82-A981-DF4F20939E3B}</ProjectGuid>
+    <RootNamespace>Recorder</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>G:\Program Files\MATLAB\R2011b\bin\win32;G:\Program Files\MATLAB\R2011b\extern\include;G:\Program Files\MATLAB\R2011b\extern\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Program Files\Microsoft Visual Studio 10.0\VC\lib;G:\Program Files\MATLAB\R2011b\extern\lib\win32\watcom;G:\Program Files\MATLAB\R2011b\extern\lib\win32\microsoft;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>G:\Program Files\MATLAB\R2011b\bin\win32;G:\Program Files\MATLAB\R2011b\extern\include;G:\Program Files\MATLAB\R2011b\extern\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Program Files\MATLAB\R2011b\extern\lib\win32\microsoft;G:\Program Files\MATLAB\R2011b\extern\lib\win32\watcom;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Program Files\MATLAB\R2011b\bin\win32;G:\Program Files\MATLAB\R2011b\extern\include;G:\Program Files\MATLAB\R2011b\extern\include\win32;D:\My Documents\Visual Studio 2010\Projects\Recorder\Training发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\Initialize发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\IncTrain发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\TestSpeech发布;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>G:\Program Files\MATLAB\R2011b\extern\lib\win32\microsoft;G:\Program Files\MATLAB\R2011b\extern\lib\win32\watcom;D:\My Documents\Visual Studio 2010\Projects\Recorder\Training发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\Initialize发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\IncTrain发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\TestSpeech发布;G:\Program Files\Microsoft Visual Studio 10.0\VC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Training.lib;TestSpeech.lib;IncTrain.lib;Initialize.lib;mclmcrrt.lib;libmat.lib;libmx.lib;mclmcr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>
+      </ImportLibrary>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Program Files\MATLAB\R2011b\bin\win32;G:\Program Files\MATLAB\R2011b\extern\include;G:\Program Files\MATLAB\R2011b\extern\include\win32;D:\My Documents\Visual Studio 2010\Projects\Recorder\Training发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\IncTrain发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\Initialize发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\TestSpeech发布;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Training.lib;TestSpeech.lib;IncTrain.lib;Initialize.lib;mclmcrrt.lib;libmat.lib;libmx.lib;mclmcr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\Program Files\MATLAB\R2011b\extern\lib\win32\microsoft;G:\Program Files\MATLAB\R2011b\extern\lib\win32\watcom;D:\My Documents\Visual Studio 2010\Projects\Recorder\Training发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\IncTrain发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\Initialize发布;D:\My Documents\Visual Studio 2010\Projects\Recorder\TestSpeech发布;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\Recorder.ico" />
+    <None Include="res\Recorder.rc2" />
+    <None Include="res\register.ico" />
+    <None Include="res\s1.ico" />
+    <None Include="res\s2.ico" />
+    <None Include="res\s3.ico" />
+    <None Include="res\signin.ico" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\toolbar2.bmp" />
+    <None Include="res\toolbar3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADOConn.h" />
+    <ClInclude Include="CloginDlg.h" />
+    <ClInclude Include="FirstPageDlg.h" />
+    <ClInclude Include="IncTrain.h" />
+    <ClInclude Include="Initialize.h" />
+    <ClInclude Include="Recorder.h" />
+    <ClInclude Include="RecorderDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestSpeech.h" />
+    <ClInclude Include="Training.h" />
+    <ClInclude Include="UserInfoDlg.h" />
+    <ClInclude Include="Users.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADOConn.cpp" />
+    <ClCompile Include="CloginDlg.cpp" />
+    <ClCompile Include="FirstPageDlg.cpp" />
+    <ClCompile Include="Recorder.cpp" />
+    <ClCompile Include="RecorderDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UserInfoDlg.cpp" />
+    <ClCompile Include="Users.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Recorder.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Recorder.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

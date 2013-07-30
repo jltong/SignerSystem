@@ -1,4 +1,3 @@
-
 // Recorder.cpp : Defines the class behaviors for the application.
 //
 
@@ -89,7 +88,7 @@ BOOL CRecorderApp::InitInstance()
 		res = mclInitializeApplication(NULL,0);
 	if (!res)
 	{
-		AfxMessageBox(_T("³õÊ¼»¯Application´íÎó£¡"));
+		AfxMessageBox(_T("ï¿½ï¿½Ê¼ï¿½ï¿½Applicationï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
 	}
 	res = InitializeInitialize();
 	res1 = TrainingInitialize();
@@ -97,36 +96,10 @@ BOOL CRecorderApp::InitInstance()
 	res3 = TestSpeechInitialize();
 	if (!res||!res1||!res2||!res3)
 	{
-		AfxMessageBox(_T("³õÊ¼»¯Lib´íÎó£¡"));
+		AfxMessageBox(_T("ï¿½ï¿½Ê¼ï¿½ï¿½Libï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
 	}
 
-	/*
-	 CString szPath; 
-	 GetModuleFileName(NULL,szPath.GetBufferSetLength(MAX_PATH+1),MAX_PATH); 
-	 szPath.ReleaseBuffer(); 
- 
-	 int nPos; 
-	 nPos=szPath.ReverseFind ('\\'); 
-	 szPath=szPath.Left (nPos); 
-	 nPos=szPath.ReverseFind ('\\'); 
-	 szPath=szPath.Left (nPos); 
-	 CString szFile = szPath + "\\SR1.accdb"; 
-
-	 CString str;
-	 str.Format(_T("DSN=%s!DBQ=%s!DEFAULTDIR=%s!!"),_T("sign_dsn"),szFile,szPath);
-	 
-	 int nlen = str.GetLength();
-	 for (int i=0; i<nlen; i++) {
-		 if (str.GetAt(i) == '!') 
-			 str.SetAt(i,'\0'); 
-	 } 
- 
-	//×Ô¶¯×¢²áODBCÊý¾ÝÔ´
-	 if (FALSE == SQLConfigDataSource(NULL, ODBC_ADD_DSN, _T("Microsoft Access Driver (*.mdb, *.accdb)\0"), str)) {
-		AfxMessageBox(_T("SQLConfigDataSource Failed")); 
-	 }
-
-	*/
+	
 
 	CString sPath;
 	GetModuleFileName(NULL,sPath.GetBufferSetLength(MAX_PATH+1),MAX_PATH);
@@ -185,7 +158,7 @@ BOOL CRecorderApp::InitInstance()
 	res = mclTerminateApplication();
 	if (!res)
 	{
-		AfxMessageBox(_T("½áÊøApplication´íÎó!"));
+		AfxMessageBox(_T("ï¿½ï¿½ï¿½ï¿½Applicationï¿½ï¿½ï¿½ï¿½!"));
 	}
 	return FALSE;
 }
